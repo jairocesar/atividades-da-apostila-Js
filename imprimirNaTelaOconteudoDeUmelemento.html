@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>jairo</title>
+    
+</head>
+<body>
+
+    <ul>
+        <li id="two" class="hot">Motorola G7</li>
+        <li id="one" class="hot">iphone <em>novo</em></li>
+        <li id="tres">innerText </li>
+        
+    </ul>
+   
+<a href="" target=""></a>
+
+<input type="text" disabled>
+
+
+
+
+    <script>
+
+        var elementoLi = document.getElementById("two");
+        alert(elementoLi.innerHTML);//mostra somento o elemento interno do html encontrado
+        elementoLi.setAttribute("style","color:red");
+
+        
+        elementoLi = document.getElementById("one");
+        alert(elementoLi.innerHTML);
+
+        elementoLi.setAttribute("style","color:red");
+
+        var elementoli3 = document.getElementById("one"); 
+alert(elementoli3.textContent);// mostra o texto do elemento sem a marcação html
+
+var elemente4= document.getElementById("tres");
+alert(elemente4.innerText);// mostra o texto do elemento sem a marcação html
+
+
+        var li1 = document.getElementById("one");
+li1.innerHTML = "<a href='#'>Clique aqui!</a>";
+
+
+var elementoli2 = document.getElementById("two"); 
+alert(elementoli2.outerHTML);// mostra todo o elemento html encontrado e o seu conteudo interno, 
+
+
+var elementoli3 = document.getElementById("one"); 
+alert(elementoli3.textContent);// o texto do elemento sem a marcação html 
+
+
+var tress = document.getElementById("tres");// pega o elemento "tres" armazena o seu conteudo interno na var tres
+tress.setAttribute("style","color:red") //seta os atributos do elemento interno armazenado em tress e os define para as especificações qeu esta dentro do parentese
+
+
+
+
+    </script>
+</body>
+</html>

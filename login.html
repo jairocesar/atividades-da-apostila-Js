@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="./login/login.css"/>
+</head>
+<body>
+
+    <header>
+        <h1>Cadastro de Login</h1>
+        </header>
+        <main>
+        <form method="POST" id="formPrincipal" action="submetido.html">
+        <p><label for="txtLogin">Login:</label>
+            <input type="text" id="txtLogin" /></p>
+        <p>
+        <label for="txtSenha">Senha:</label>
+
+        <input type="password" id="txtSenha" /><!--aqui é definido o evento onblur para  validado a quantidade de caractere para a senha-->
+
+        <img src="../Noticias/res/question.jpg" height="16px" id="imgIcon"/> <!--aqui é definido o evento de mouse para mostrar a dica de senha-->
+        <span class="dica" id="dicaTexto" >Senha precisa ter ao menos 6 caracteres</span>
+        </p>
+        <p><label for="txtDataNascimento">Nascimento:</el><input type="date" id="txtDataNascimento" /></p>
+        <p><input type="submit" value="OK" /></p>
+        </form>
+        </main>
+        <script type="text/javascript" src="login.js"></script>
+    
+</body>
+</html>

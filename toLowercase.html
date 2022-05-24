@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cadastro de login</title>
+<link rel="stylesheet" type="text/css" href="toLowercase.css" />
+</head>
+<body>
+<header>
+<h1>Cadastro de Login</h1>
+</header>
+<main>
+
+    <form method="POST" id="formPrincipal">
+
+<p>
+    <label for="txtLogin" >Login:</label>
+    <input type="text" id="txtLogin" onchange="letraMaiemMin()"/>
+</p>
+
+<p>
+    <label for="txtSenha">Senha:</label>
+    <input type="password" id="txtSenha" onblur="validaSenha()"  />
+<!-- na tag img onmouseover faz aparecer a msg quando passa o mouse sobre a img, e onmouseout faz a msg sumir quando tira o mouse de cima da img-->
+<img src="./res/img/taxi.png" height="16px" id="imgIcone" />
+<span class="dica" id="dicaTexto">senha precisa ter ao menos 6 caracteres</span>
+</p>
+
+<p>
+    <label for="txtDataNascimento">Nascimento:</label>
+    <input type="date" id="txtDataNascimento" />
+</p>
+
+<p>
+    <input type="submit" value="OK" />
+</p>
+
+</form>
+
+</main>
+<script type="text/javascript" src="toLowercase.js"></script>
+</body>
+</html>

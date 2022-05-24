@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form method="POST" id="formPrincipal"  onsubmit="validarsenha()" action="submetido.html">
+        <p><label for="txtLogin">Login:</label>
+            <input type="text" id="txtLogin" /></p>
+        <p>
+        <label for="txtSenha">Senha:</label>
+
+        <input type="password" id="txtSenha" /><!--aqui é definido o evento onblur para  validado a quantidade de caractere para a senha-->
+
+       
+        </p>
+       
+        <p><input type="submit" value="OK" /></p>
+        </form>
+
+
+    <script>
+        function validarsenha(){
+         
+
+        var elSenha = document.getElementById("txtSenha");
+        if(elSenha.value==""){
+            alert("campo obrigatorio");
+            elSenha.focus();
+            return false;
+        }
+        return true;
+
+        }
+    </script>
+    
+</body>
+</html>
