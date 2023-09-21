@@ -7,7 +7,7 @@ formElem.elements[i].disabled = true;
 }
 }
 funcition teste(){
-    var nome = "jairo";
+    var nome = "jairo teste";
 }
 
 
