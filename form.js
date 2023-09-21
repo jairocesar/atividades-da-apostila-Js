@@ -6,7 +6,9 @@ for(var i = 0; i < formElem.elements.length; i++)
 formElem.elements[i].disabled = true;
 }
 }
-
+funcition teste(){
+    var nome = "jairo teste";
+}
 
 
 function habilitar()// função que habilita o input, ou outro component
